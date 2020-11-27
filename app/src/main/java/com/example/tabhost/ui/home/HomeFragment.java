@@ -20,8 +20,9 @@ import com.example.tabhost.R;
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
+
     TabHost tabHost;
-    @SuppressLint("UseCompatLoadingForDrawables")
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
@@ -32,15 +33,15 @@ public class HomeFragment extends Fragment {
         tabHost.setup();
 
         TabHost.TabSpec tab1 = tabHost.newTabSpec("tab1");
-        tab1.setIndicator("Home", getResources().getDrawable(R.drawable.ic_home));
+        tab1.setIndicator("Home");
         tab1.setContent(R.id.tab1);
 
         TabHost.TabSpec tab2 = tabHost.newTabSpec("tab2");
-        tab2.setIndicator("Automovil",getResources().getDrawable(R.drawable.ic_cate));
+        tab2.setIndicator("Automovil");
         tab2.setContent(R.id.tab2);
 
         TabHost.TabSpec tab3 = tabHost.newTabSpec("tab3");
-        tab3.setIndicator("Productos",getResources().getDrawable(R.drawable.ic_produc));
+        tab3.setIndicator("Productos");
         tab3.setContent(R.id.tab3);
 
         tabHost.addTab(tab1);

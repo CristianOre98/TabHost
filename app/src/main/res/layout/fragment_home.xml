@@ -37,7 +37,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="#fff"
-                        android:text="Bienbenidos/as"
+                        android:text="Bienvenidos/as"
                         android:textStyle="bold"
                         android:textSize="50dp"
                         android:layout_gravity="center"
